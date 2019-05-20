@@ -1,0 +1,75 @@
+﻿@using MVC_core.Models
+@model List<IdentityInfo>
+    <div class="row" style="margin:0 10%;padding:0 0;" id="ProfilePage">
+        <div class="col-md-6 col-sm-6">
+            <div class="card">
+                <a href="~/images/Resources/r1.jpg" class="thumbnail col-md-12"> 
+                    <img src="~/images/Resources/r1.jpg"
+                         alt="ayame">
+                </a>
+                <p class="col-md-8 col-sm-8 col-xs-8">
+                    <strong style="color:green;">组长：</strong>リオン
+                </p>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary" href="https://go.microsoft.com/fwlink/?LinkId=301865">了解ta &raquo;</a></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="card">
+                <a href="~/images/Resources/r4.jpg" class="thumbnail col-md-12">
+                    <img src="~/images/Resources/r4.jpg"
+                         alt="ayame">
+                </a>
+                <p class="col-md-8 col-sm-8 col-xs-8">
+                    <strong style="color:green;">字幕：</strong>豆豆
+                </p>
+                <div  class="col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary" href="https://go.microsoft.com/fwlink/?LinkId=301865">了解ta &raquo;</a></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="card">
+                <a href="~/images/Resources/r3.jpg" class="thumbnail col-md-12">
+                    <img src="~/images/Resources/r3.jpg"
+                         alt="ayame">
+                </a>
+                <p class="col-md-8 col-sm-8 col-xs-8">
+                    <strong style="color:green;">翻译：</strong>Endow
+                </p>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary" href="https://go.microsoft.com/fwlink/?LinkId=301865">了解ta &raquo;</a></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="card">
+                <a href="~/images/Resources/r2.jpg" class="thumbnail col-md-12">
+                    <img src="~/images/Resources/r2.jpg"
+                         alt="ayame">
+                </a>
+                <p class="col-md-8 col-sm-8 col-xs-8">
+                    <strong style="color:green;">美工：</strong>R大
+                </p>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary" href="https://go.microsoft.com/fwlink/?LinkId=301865">了解ta &raquo;</a></div>
+            </div>
+        </div>
+      </div>
+
+<div style="width:100%;margin-top:20px;">
+    <p style="margin:20px 20px;font-size:30px;"><strong style="color:green;">已注册的成员：</strong></p>
+        @foreach (var i in Model)
+        {
+        <div class="card" style="width:80%;margin:1% 10%;height:100px;">
+         <p style="text-align:left;margin:15px 2%; width:80%;font-size:20px;">
+            @if (i.IsUser == true)
+            {
+             <strong style="color:gray;width:100%"><span class="glyphicon glyphicon-user" style="font-size:20px;"></span>用户：@i.name</strong>
+            }
+            else
+            {
+            <strong style="color:green;width:100%"><span class="glyphicon glyphicon-user" style="font-size:20px;"></span>管理员：@i.name</strong>
+            }
+            </p>
+          </div>
+         }
+</div>
+
+
+
+

@@ -1,0 +1,207 @@
+﻿* {
+    font-family: 'Microsoft YaHei';
+}
+body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-color:#f2f3f5;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+h1 p a
+{
+    margin:0 0;
+    padding:0 0;
+}
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".jpg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+.container-fluid 
+{
+    padding-left:0px;
+}
+.navbar {
+    min-height: 70px;
+}
+#navbar-brand {
+    margin: 0 0;
+    padding-top: 10px;
+    padding-bottom: inherit;
+    padding-left: 0px;
+}
+.navbar-nav > li {
+    display: inline-block;
+}
+.navbar-nav > li:hover
+{
+    font-weight:bold;
+    background-color:gainsboro;
+}
+.navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    font-size:large;
+    
+}
+#MainPage {
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+.dropdown-menu {
+    border-style: solid;
+    margin: 0 0;
+    padding: 0 0;
+}
+    .dropdown-menu > li {
+        display: block;
+        height: 70px;
+        /*width:300px;*/
+        font-size: large;
+        margin: 0 0;
+        padding: 0 0;
+        font-weight: lighter;
+    }
+        .dropdown-menu > li > a {
+            margin: 0 0;
+            padding: 0 0;
+            display: block;
+            background-color: white;
+            height: 70px;
+            font-weight: lighter;
+            padding-top: 20px;
+            text-align: center;
+            vertical-align: bottom;
+            /*width: 300px;*/
+        }
+ .dropdown-menu > li a:hover {
+            font-weight: bold;
+            background-color: gainsboro;
+            
+}
+ /*导航*/
+.shutter img {
+    border: 0;
+    vertical-align: top;
+}
+
+.shutter ul, li {
+    list-style: none;
+}
+
+#TurnImg {
+    width: 100%;
+    height: auto;
+}
+
+#GetActualSize {
+    width: 100%;
+    height: 0;
+    padding-bottom: 146%;
+}
+/*Index*/
+#ProfilePage > div {
+    margin: 0px 0px;
+    padding: 10px 10px;
+}
+.card {
+    margin: 0 0;
+    padding: 0 0;
+    border-style: solid;
+    overflow: auto;
+    border-width: thin;
+}
+
+    .card:hover {
+        transform: translate3d(0, -2px, 0);
+        -webkit-box-shadow: #ccc 0px 10px 10px;
+        -moz-box-shadow: #ccc 0px 10px 10px;
+        box-shadow: #ccc 0px 10px 10px;
+        cursor: pointer;
+    }
+    /*3dcombox*/
+.card a {
+    margin: 0 0;
+    padding: 10px 10px;
+    border: hidden;
+}
+.card p {
+    height: 60px;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 18px;
+    font-size: large;
+}
+.card div {
+    text-align: left;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.row > div {
+    overflow: auto;
+}
+
+.row > p {
+    text-align: center;
+    font-size: 30px;
+}
+/*profile*/
+
+form {
+    margin: 0 0;
+    padding: 0 0;
+}
+    form div {
+        overflow: auto;
+    }
+
+.picture > img {
+    width: 100%;
+    height: auto;
+}
+
+.loginForm label {
+    text-align: right;
+    padding-top: 5px;
+}
+/*form*/
+/*-----comment------*/
+.commentBoard {
+    margin: 20px 10px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border:thin;
+    background-color: #fff;
+    font-family:'Microsoft YaHei';
+    font-size:15px;
+    overflow:auto;
+}
