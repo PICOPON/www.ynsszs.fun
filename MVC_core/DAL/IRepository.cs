@@ -14,6 +14,8 @@ namespace MVC_core.DAL
         bool CheckUser(MyWebDB myWebDB, FormData formData);//R
         bool CheckUserByName(MyWebDB myWebDB, string name);
         List<T> GetAllUser(MyWebDB myWebDB);//列出所有
-        bool AddCommentDoNet(MyWebDB myWebDB,CommentDoNet commentDoNet); 
+        bool AddCommentDoNet(MyWebDB myWebDB,CommentDoNet commentDoNet);
+        List<CommentDoNet> ShowAllComment(MyWebDB myWebDB);
+
     }
 }

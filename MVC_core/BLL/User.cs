@@ -62,5 +62,16 @@ namespace MVC_core.BLL
                 return false;
             }
         }
+        public bool ShowAllComment(MyWebDB dB, IRepository<AdministratorDoNet> admRpo, IRepository<UserDoNet> userRpo)
+        {
+            try
+            {
+                userRpo.ShowAllComment(dB);
+                return true;
+            }catch
+            {
+                return false;
+            }
+        }
     }
 }

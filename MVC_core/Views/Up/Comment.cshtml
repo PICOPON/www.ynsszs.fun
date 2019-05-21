@@ -1,16 +1,26 @@
-﻿<div>
-    <div class="commentBoard">
-        <form asp-controller="Up" asp-action="Comment" role="form" method="post">
-            <div class="col-md-11"  >
-                <input name="text" style="background-color:#f4f5f7;border-radius: 5px;width:80%;height:200px;" placeholder="请输入留言，留言数目不超过50字" />
+﻿@using MVC_core.Models
+@model  List<CommentDoNet>
+        <div class="commentBoard">
+            <h2>留言栏</h2>
+            <hr />
+            <div class="col-md-12 col-xs-12">
+                <form asp-controller="Up" asp-action="Comment" role="form" method="post">
+                    <div class="col-md-8 col-xs-8" style="border-style:solid;padding:0 10px;">
+                        <textarea name="text" class="commentInput" wrap="soft" maxlength="150" required placeholder="请输入留言，留言数目不超过150字"></textarea>
+                    </div>
+                    <div class="col-md-4 col-md-4 commentSubmit" style="border-style:solid">
+                        <input name="submit" value="发表评论" type="submit" class="btn btn-primary" style="height: 64px;font-size:14px;" />
+                    </div>
+                </form>
             </div>
-            <div class="col-md-1">
-                <input name="submit" value="submit" type="submit" class="btn btn-primary " />
+            <div class="col-md-12 col-xs-12">
+                <hr />
+                <h3>全部留言</h3>
             </div>
-        </form>
-    </div>
-   
-</div>
+
+
+        </div>
+
 
 
 

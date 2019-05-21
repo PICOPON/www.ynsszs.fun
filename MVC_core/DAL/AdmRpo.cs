@@ -125,6 +125,11 @@ namespace MVC_core.DAL
                 return false;
             }
         }
+
+        public List<CommentDoNet> ShowAllComment(MyWebDB myWebDB)
+        {
+            throw new NotImplementedException();
+        }
         //添加评论
     }
 }

@@ -143,6 +143,11 @@ namespace MVC_core.DAL
                 return false;
             }
         }
+
+        public List<CommentDoNet> ShowAllComment(MyWebDB myWebDB)
+        {
+            return myWebDB.Comment.ToList<CommentDoNet>();
+        }
         //添加评论
 
     }
