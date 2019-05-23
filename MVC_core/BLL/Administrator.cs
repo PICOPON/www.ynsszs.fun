@@ -9,6 +9,9 @@ namespace MVC_core.BLL
 {
     public class Administrator :User
     {
-       
+        public bool UpLoadFile()
+        {
+            return true;
+        }
     }
 }

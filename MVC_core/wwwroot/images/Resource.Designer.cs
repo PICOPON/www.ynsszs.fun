@@ -153,6 +153,16 @@ namespace MVC_core.wwwroot.images {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
+        internal static byte[] _71 {
+            get {
+                object obj = ResourceManager.GetObject("71", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
         internal static byte[] _8 {
             get {
                 object obj = ResourceManager.GetObject("8", resourceCulture);
@@ -203,6 +213,16 @@ namespace MVC_core.wwwroot.images {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
+        internal static byte[] mini_7 {
+            get {
+                object obj = ResourceManager.GetObject("mini-7", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
         internal static byte[] r1 {
             get {
                 object obj = ResourceManager.GetObject("r1", resourceCulture);
@@ -236,6 +256,26 @@ namespace MVC_core.wwwroot.images {
         internal static byte[] r4 {
             get {
                 object obj = ResourceManager.GetObject("r4", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
+        internal static byte[] r5 {
+            get {
+                object obj = ResourceManager.GetObject("r5", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
+        internal static byte[] r6 {
+            get {
+                object obj = ResourceManager.GetObject("r6", resourceCulture);
                 return ((byte[])(obj));
             }
         }

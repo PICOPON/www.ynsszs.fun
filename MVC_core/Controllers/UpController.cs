@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MVC_core.BLL;
 using MVC_core.DAL;
 using MVC_core.Models;
 using System;
+using System.Collections.Generic;
 
 namespace MVC_core.Controllers
 {
@@ -28,7 +28,12 @@ namespace MVC_core.Controllers
         [Route("Comment")]
         public IActionResult Comment()
         {
-            return View();
+            List<CommentDoNet> commentDoNets = new List<CommentDoNet>();
+            using (MyWebDB DB = new MyWebDB())
+            {
+                commentDoNets = userRpo.ShowAllComment(DB);
+            }
+            return View(commentDoNets);
         }
         //留言
         [HttpPost]
@@ -55,7 +60,7 @@ namespace MVC_core.Controllers
                     {
                         var comment = new CommentDoNet
                         {
-                            Name = "Unknown User",
+                            Name = "UnknownUser",
                             CommentText = text.Trim(),
                             Date = DateTime.Now.Date,
                             Time = DateTime.Now.TimeOfDay

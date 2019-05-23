@@ -145,6 +145,9 @@
   <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\7.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniimg\7.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\8.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -160,6 +163,9 @@
   <data name="aym" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\aym.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="mini-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniimg\mini-7.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\r1.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -171,6 +177,12 @@
   </data>
   <data name="r4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\r4.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="r5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\r5.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="r6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\r6.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="title_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\title_1.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

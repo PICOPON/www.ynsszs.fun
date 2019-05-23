@@ -2,16 +2,17 @@
 @{
     ViewData["Title"] = "用户控制台";
 }
-<div class="row">
-    <h2 style="margin:20px 20px;">欢迎来到 @ViewData["Title"]</h2>
-    <div class="col-md-2 col-sm-2 col-xs-2">
-        <ul>
-            <li class="btn btn-primary" style="margin:10px auto;">修改资料</li>
-        </ul>
-    </div>
+<div class="commentBoard">
+    <h3>@ViewData["Title"]</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-1 col-sm-2 col-xs-12 controller-menu">
+            <div class="btn btn-default">查看资料</div>
+            <div class="btn btn-default">修改资料</div>
+        </div>
+        <div class="col-md-11 col-sm-10 col-xs-12 controller-content" style="border-style:dashed;">
+            <p style="margin:100px 40%;font-size:larger;color:deeppink">内容还在建设</p>
+        </div>
 
-    <div class="col-md-10 col-sm-10 col-xs-10" style="border-style:dashed;">
-        <p style="margin:100px 40%;font-size:larger;color:deeppink">内容还在建设</p>
     </div>
-
 </div>

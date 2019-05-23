@@ -1,25 +1,45 @@
 ﻿@using MVC_core.Models
 @model  List<CommentDoNet>
-        <div class="commentBoard">
-            <h2>留言栏</h2>
+    <div class="commentBoard">
+            <h2 class="col-md-10">留言栏</h2>@if (User.Identity.IsAuthenticated)
+            {<span class="glyphicon glyphicon-ok-circle col-md-2" style="color: rgb(211, 73, 126);line-height:60px;">@User.Identity.Name</span>}
+        else
+        { <span class="glyphicon glyphicon-remove-circle col-md-2" style="color: rgb(71, 76, 97);line-height:60px;">未登录用户</span>}
             <hr />
-            <div class="col-md-12 col-xs-12">
-                <form asp-controller="Up" asp-action="Comment" role="form" method="post">
-                    <div class="col-md-8 col-xs-8" style="border-style:solid;padding:0 10px;">
-                        <textarea name="text" class="commentInput" wrap="soft" maxlength="150" required placeholder="请输入留言，留言数目不超过150字"></textarea>
-                    </div>
-                    <div class="col-md-4 col-md-4 commentSubmit" style="border-style:solid">
-                        <input name="submit" value="发表评论" type="submit" class="btn btn-primary" style="height: 64px;font-size:14px;" />
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-12 col-xs-12">
-                <hr />
-                <h3>全部留言</h3>
-            </div>
-
-
+        <div class="col-md-12 col-xs-12">
+            <form asp-controller="Up" asp-action="Comment" role="form" method="post">
+                <div class="col-md-8 col-xs-8" style="padding:0 10px;">
+                    <textarea name="text" class="commentInput" wrap="soft" maxlength="150" required placeholder="请输入留言，留言数目不超过150字"></textarea>
+                </div>
+                <div class="col-md-4 col-md-4 commentSubmit">
+                    <input name="submit" value="发表评论" type="submit" class="btn btn-primary" style="height: 64px;font-size:14px;" />
+                </div>
+            </form>
         </div>
+        <div class="col-md-12 col-xs-12">
+            <hr />
+            <h3>全部留言</h3>
+        </div>
+        <div class="col-md-12 col-xs-12 commentBox">
+            @foreach (var i in Model)
+            {
+                <div class="commentList">
+                    <div class="col-md-12 col-xs-12">
+                        @if (i.Name != "UnknownUser")
+                        {<span class="glyphicon glyphicon-user col-md-2" style="color: rgb(211, 73, 126);line-height:50px;margin:0 0;">@i.Name</span>}
+                    else
+                    { <span class="glyphicon glyphicon-user col-md-2" style="color: rgb(71, 76, 97);line-height:50px;margin:0 0;">UnknownUser</span>}
+                    </div>
+                    <div class="col-md-12 col-xs-12 commentText"><p>@i.CommentText</p></div>
+                    <div class="info">
+                        <span class="floor col-md-1">#@i.CommentId</span>
+                        <span class="time col-md-3">@i.Date.Year-@i.Date.Month-@i.Date.Day @i.Time</span>
+                    </div>
+                </div>
+                <hr />
+            }
+        </div>
+    </div>
 
 
 
